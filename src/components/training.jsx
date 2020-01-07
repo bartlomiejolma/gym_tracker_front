@@ -12,25 +12,22 @@ const useStyles = makeStyles({
   },
 });
 
-class Training extends Component {
+function Training ({ training }) {
 
-  classes = useStyles();
+  const classes = useStyles();
+  console.log(training);
+  return (
+    <TreeItem nodeID={training.id} label={`Training ${training.id} ${training.start_time}`}>
+      <h5>Exercises:</h5>
+      {training.trainingsExercises.map(trainingExercise => (
+        <TrainingExercise
+          key={training.id}
+          trainingExercise={trainingExercise}
+        ></TrainingExercise>
+      ))}
+    </TreeItem>
+  );
 
-  render() {
-    const { training } = this.props;
-    console.log(training);
-    return (
-      <TreeItem nodeID={training.id} label="Training {training.id} {training.start_time}">
-        <h5>Exercises:</h5>
-        {training.trainingsExercises.map(trainingExercise => (
-          <TrainingExercise
-            key={training.id}
-            trainingExercise={trainingExercise}
-          ></TrainingExercise>
-        ))}
-      </TreeItem>
-    );
-  }
 }
 
 export default Training;
