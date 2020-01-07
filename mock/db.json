@@ -1,0 +1,39 @@
+{
+  "exercises": {
+    "data": [
+      { "id": 1, "name": "bench press", "category": "chest" },
+      { "id": 2, "name": "military press", "category": "shoulders" },
+      { "id": 3, "name": "romanian deadlift", "category": "legs" }
+    ]
+  },
+  "trainings": {
+    "data": [
+      {  
+        "id": 1, 
+        "start_time": "2020-01-04T1:50:31.589Z", 
+        "trainingsExercises": [
+          { "id": 1, "training_id" : 2, "exercise_id" : 1, "weight": 80, "repetitions": 6, "series": 5 },
+          { "id": 2, "training_id" : 2, "exercise_id" : 3, "weight": 90, "repetitions": 9, "series": 3 }
+        ]
+      },
+      {  
+        "id": 2, 
+        "start_time": "2020-01-06T1:50:31.589Z", 
+        "trainingsExercises": [
+          { "id": 1, "training_id" : 1, "exercise_id" : 1, "weight": 80, "repetitions": 5, "series": 5 },
+          { "id": 2, "training_id" : 1, "exercise_id" : 2, "weight": 40, "repetitions": 8, "series": 3 },
+          { "id": 3, "training_id" : 1, "exercise_id" : 3, "weight": 90, "repetitions": 8, "series": 3 }
+        ]
+      }
+    ]
+  },
+  "training_exercises": {
+    "data": [
+      { "id": 1, "training_id" : 1, "exercise_id" : 1, "weight": 80, "repetitions": 5, "series": 5 },
+      { "id": 2, "training_id" : 1, "exercise_id" : 2, "weight": 40, "repetitions": 8, "series": 3 },
+      { "id": 3, "training_id" : 1, "exercise_id" : 3, "weight": 90, "repetitions": 8, "series": 3 },
+      { "id": 1, "training_id" : 2, "exercise_id" : 1, "weight": 80, "repetitions": 6, "series": 5 },
+      { "id": 2, "training_id" : 2, "exercise_id" : 3, "weight": 90, "repetitions": 9, "series": 3 }
+    ]
+  }
+}
